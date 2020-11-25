@@ -2,7 +2,7 @@
   "name": "git-vue-action",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gloomysunday28.github.io/git-action",
+  "homepage": "https://gloomysunday28.github.io/git-action-test",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
