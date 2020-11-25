@@ -7,10 +7,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
     steps:
-    # - name: Checkout
-    #   uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-    #   with:
-    #     persist-credentials: false
+    - name: Checkout
+      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      with:
+        persist-credentials: false
     - name: Install and Build
       run: |
         npm install
@@ -19,5 +19,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pagess
+        BRANCH: dev
         FOLDER: dist
